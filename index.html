@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
   </head>
-<!-- function called each time the application loads -->
+  <!-- function called each time the application loads -->
   <body onload="fetchIssues()">
     <div class="container py-5">
       <h1>JS Tracker</h1>
@@ -27,13 +27,20 @@
           <div class="form-group">
             <label for="issueDescInput"><strong>Description</strong></label>
             <input
-              type="text" class="form-control" name="issueDescription" id="issueDescription"
-               placeholder="Describe the issue"
+              type="text"
+              class="form-control"
+              name="issueDescription"
+              id="issueDescription"
+              placeholder="Describe the issue"
             />
           </div>
           <div class="form-group">
             <label for=""><strong>Severity</strong></label>
-            <select class="form-control" name="issueSeverity" id="issueSeverity">
+            <select
+              class="form-control"
+              name="issueSeverity"
+              id="issueSeverity"
+            >
               <option>Low</option>
               <option>Medium</option>
               <option>High</option>
@@ -60,7 +67,7 @@
         </div>
       </div>
       <div class="footer">
-        <p>&copy CodingTheSmartWay.com</p>
+        <p>&copy2021 Peris</p>
       </div>
     </div>
 
@@ -69,17 +76,20 @@
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous" ></script>
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous" ></script>
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- to generate unique identifiers for issues -->
     <script src="http://chancejs.com/chance.min.js"></script>
- <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
