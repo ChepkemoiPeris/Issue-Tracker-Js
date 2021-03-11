@@ -1,3 +1,4 @@
+document.getElementById('issueInputForm').addEventListener('submit',saveIssue);
 function fetchIssues(){
     //retrive issues from local storage and convert them to  JSON object again
     var issues =JSON.parse(localStorage.getItem('issues'));
@@ -16,8 +17,8 @@ for(var i=0;i<issues.length;i++){
     issuesList.innerHTML += '<div class="well">'+
     '<h6>Issue ID: ' + id + '</h6>'+
     '<p><span class="label label-info">' + status + '</span></p>'+
-    '<h3>' + desc + '</h3>'+
-    '<p><span class="glyphicon glyphicon-time"></span> ' + severity + ' '+
+    '<h6>' + desc + '</h6>'+
+    '<p><span class="glyphicon glyphicon-time"></span> ' + severity + '</p> '+
     '<span class="glyphicon glyphicon-user"></span> ' + assignedTo + '</p>'+
     '<a href="#" class="btn btn-warning" onclick="setStatusClosed(\''+id+'\')">Close</a> '+
     '<a href="#" class="btn btn-danger" onclick="deleteIssue(\''+id+'\')">Delete</a>'+
